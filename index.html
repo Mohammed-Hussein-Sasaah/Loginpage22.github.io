@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styel.css/styeljs.css"> 
+
+
+    <script>
+        function check(){
+ var enteredUsername = document.getElementById("username").value;
+var enteredPassword = document.getElementById("password").value;
+
+var correctUsername = "admin";
+var correctPassword = "password123";
+
+if (enteredUsername == correctUsername && enteredPassword == correctPassword) {
+  alert("تم التحقق من المعلومات بنجاح!");
+} else {
+  alert("اسم المستخدم أو كلمة المرور غير صحيحة. الرجاء المحاولة مرة أخرى.");
+}
+        }
+    </script>
+    <title>assiment 1</title>
+</head>
+<body>
+    <form action="index2.html" method="post">
+    <div class ="login-container"> 
+        <h1>Login</h1>
+    <label for="username"></label><br>
+    <input type="text" placeholder="username" id="username"  required >  <br>
+    <label for="password"></label> <br>
+    <input type="password" placeholder="password" id="password" required >  <br>
+    <input type="submit" value="Sign In" id="btn" onclick="check()"> <br>
+    <p><br>
+    <a href="#">Forget my password</a> <br>
+    <a href="#">Reset it now</a>
+</div>
+   </form>
+</body>
+</html>
